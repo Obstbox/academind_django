@@ -10,6 +10,12 @@
 </head>
 <body>
     <h1>All Meetups!</h1>
-    <p>Hello Django!</p>    
+    <p>Hello Django!</p>
+    
+    {% if show_meetups %}
+        <h2>{{ meetups.0.title }}</h2>
+    {% else %}
+        <p>No meetups found.</p>
+    {% endif %}
 </body>
 </html>
