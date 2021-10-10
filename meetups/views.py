@@ -8,6 +8,6 @@ def index(request):
         {'title': 'A Secont Meetup'},
     ]
     return render(request, 'meetups/index.html', {
-        'show_meetups': False,
+        'show_meetups': True,
         'meetups': meetups
     })
